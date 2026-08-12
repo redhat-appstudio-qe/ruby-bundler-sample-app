@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-svbulp"
+      == "base-cdajwh"
   labels:
-    appstudio.openshift.io/application: application-kzkf
+    appstudio.openshift.io/application: application-wdfy
     appstudio.openshift.io/component: component-prefetch-bundler
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-bundler-on-push
@@ -164,7 +164,7 @@ spec:
         - name: name
           value: git-clone
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/git-clone@sha256:57b32ea5df99416e59613780e78cd00c63a7981396c731685c93c50b66703aad
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/git-clone@sha256:a1b95c204d49e536bdb401d45b8025d8108dce5a041fcc85fb00ee8fb8c3b5b9
         - name: kind
           value: task
         resolver: bundles
