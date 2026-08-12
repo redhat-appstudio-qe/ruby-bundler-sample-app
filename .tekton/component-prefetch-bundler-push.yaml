@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-wvtalv"
+      == "base-uejiae"
   labels:
-    appstudio.openshift.io/application: application-gkej
+    appstudio.openshift.io/application: application-mnht
     appstudio.openshift.io/component: component-prefetch-bundler
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-bundler-on-push
@@ -266,7 +266,7 @@ spec:
         - name: name
           value: build-image-index
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/build-image-index@sha256:8146657d0594ac1690d9739f0524107296b965dafe965637077771e5278849a0
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/build-image-index@sha256:354696b203e42e6991bda5a081d95ee311c065608a87f5d57bb8bf129e081372
         - name: kind
           value: task
         resolver: bundles
