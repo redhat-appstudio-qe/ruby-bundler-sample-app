@@ -9,9 +9,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "base-eahild"
+      == "base-wkxger"
   labels:
-    appstudio.openshift.io/application: application-dsak
+    appstudio.openshift.io/application: application-fbuu
     appstudio.openshift.io/component: component-prefetch-bundler
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-bundler-on-pull-request
@@ -499,7 +499,7 @@ spec:
         - name: name
           value: push-dockerfile
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/push-dockerfile@sha256:931c49dbab7344c3b9bde360a1d2915f4c10230ad35f0f4b2ee8d2c59bd7df48
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/push-dockerfile@sha256:5a61bc0b817cae7948d9e5caee6b6f14c9f944a502eda3d3f74a6a2ba5f595ba
         - name: kind
           value: task
         resolver: bundles
