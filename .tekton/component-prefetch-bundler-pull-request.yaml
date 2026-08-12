@@ -9,9 +9,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "base-naowem"
+      == "base-jaabgc"
   labels:
-    appstudio.openshift.io/application: application-ibee
+    appstudio.openshift.io/application: application-ydfg
     appstudio.openshift.io/component: component-prefetch-bundler
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-bundler-on-pull-request
@@ -478,7 +478,7 @@ spec:
         - name: name
           value: apply-tags
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/apply-tags@sha256:4765f202dd6252729b632380dfcabecb505c1edf05852a575ce2cc79484b1321
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/apply-tags@sha256:4237234e1db744e97e3a12e91c6a8bb88b866d4d574df48f2bf3ca331416b415
         - name: kind
           value: task
         resolver: bundles
